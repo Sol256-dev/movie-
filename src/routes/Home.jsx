@@ -48,13 +48,13 @@ export default Home;
 
 export const fetchData = async () => {
   const res1 = await fetch(
-    "https://api.themoviedb.org/3/trending/all/week?api_key=31366e0b7b440ee4784ea1e0f129e1da"
+    `https://api.themoviedb.org/3/trending/all/week?api_key=${import.meta.env.VITE_TMDB_API_KEY}`
   );
   const res2 = await fetch(
-    "https://api.themoviedb.org/3/movie/upcoming?api_key=31366e0b7b440ee4784ea1e0f129e1da&language=en-US&page=10"
+    `https://api.themoviedb.org/3/movie/upcoming?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US&page=10`
   );
   const res3 = await fetch(
-    "https://api.themoviedb.org/3/movie/top_rated?api_key=31366e0b7b440ee4784ea1e0f129e1da&language=en-US&page=10"
+    `https://api.themoviedb.org/3/movie/top_rated?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US&page=10`
   );
   const data1 = await res1.json();
   const data2 = await res2.json();
