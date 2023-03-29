@@ -11,7 +11,7 @@ import "./index.css";
 import Home, { fetchData } from "./routes/Home";
 import Movies from "./routes/Movies";
 import Tvshows from "./routes/Tvshows";
-import Error from "./routes/Error";
+// import Error from "./routes/Error";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
